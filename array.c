@@ -11,10 +11,11 @@ int main(void)
     printf("Hello, %s, from %s!\n", name, location);
 
     // Practicing Arrays
+    // Get Array Size
     int m = get_int("size of array: ");
 
     int number[m];
-
+    // Get First Number Of The Array
     int n;
         do
         {
@@ -25,7 +26,7 @@ int main(void)
             }
         }
         while(n < 0);
-
+    // Get Addend
     int y;
         do
         {
@@ -36,7 +37,7 @@ int main(void)
             }
         }
         while(y < 0);
-
+    // Arithmetic Function
         number[0] = n - 1;
         number[1] = n;
 
@@ -44,7 +45,9 @@ int main(void)
         {
             number[i] = number[i - 1] + y;
         }
+    // Get Position User Wants To Print
     int s = get_int("What position of array do you want?: ");
 
+    //Print Number In That Position
     printf("The number in this position is: %i\n", number[s]);
 }
